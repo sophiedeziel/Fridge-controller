@@ -19,7 +19,7 @@ const float tempInterval = 0.5;
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
-U8GLIB_SSD1306_128X64 display(U8G_I2C_OPT_NONE);
+U8GLIB_SSD1306_128X64 display(U8G_I2C_OPT_FAST);
 
 float desired_temperature = 6.0;
 
